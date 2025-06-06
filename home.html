@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAROVSKI - Весна-Лето 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="/fonts/ZtChablis/ZtChablis/ZtChablisBold-8MKOZ.ttf" as="font" type="font/woff2" crossorigin>    
+</head>
+<body>
+    <!-- Reusable Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Logo.svg" alt="">
+            </div>
+             <button class="mobile-menu-btn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+          <div class="nav_all">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Главная</a></li>
+                    <li><a href="#" class="nav-link">О бренде</a></li>
+                    <li><a href="#" class="nav-link">Каталог</a></li>
+                    <li><a href="#" class="nav-link">Коллекции</a></li>
+                    <li><a href="#" class="nav-link">Магазины</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="icon-btn search-btn" aria-label="Поиск">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <input type="text" class="search-input" placeholder="Поиск" style="display: none; width: 100%; background: white; border: none; padding: 10px; position: absolute; top: 100%; left: 0; z-index: 1;">
+                <script>
+                    document.querySelector(".search-btn").addEventListener("click", () => {
+                        if (document.querySelector(".search-input").style.display === "none") {
+                            document.querySelector(".search-input").style.display = "block";
+                            document.querySelector(".search-input").style.height = "76px";
+                            document.querySelector(".search-input").style.marginTop = "-20px";
+                        } else {
+                            document.querySelector(".search-input").style.display = "none";
+                        }
+                    });
+                </script>
+                <button class="icon-btn favorites-btn" aria-label="Избранное">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </button>
+               
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">Весна-Лето 2025</h2>
+                <p class="hero-subtitle">
+                    Шагните в наш магический мир, где сияет<br>
+                    преобразующая сила кристалла.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Каталог</button>
+                    <button class="btn btn-secondary">Узнать больше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional content sections can be added here -->
+    <main class="main-content">
+        <section class="content-section">
+            <div class="container">
+                <h3>Мастера света с 1895 года</h3>
+                <p>Алмазы SWAROVSKI — это высококачественные кристаллы, которые создаются с использованием уникальной технологии огранки. Бренд Swarovski, основанный в 1895 году Даниэлем Swarovski, прославился на весь мир благодаря своему мастерству в обработке стеклянных кристаллов и создании изысканных ювелирных изделий.</p>
+            </div>
+        </section>
+    </main>
+        <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider">
+            <div class="slider-wrapper">
+                <div class="slide active">
+                <img src="/images/home.png" alt="Swarovski Collection 1">
+                </div>
+                <div class="slide">
+                <img src="/images/home.png" alt="Swarovski Collection 2">
+                </div>
+                <div class="slide">
+                <img src="/images/home.png" alt="Swarovski Collection 3">
+                </div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <button class="slider-nav prev" aria-label="Предыдущий слайд">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+            </button>
+            
+            <button class="slider-nav next" aria-label="Следующий слайд">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </button>
+            
+            <!-- Pagination dots -->
+            <div class="slider-pagination">
+                <button class="pagination-dot active" data-slide="0" aria-label="Слайд 1"></button>
+                <button class="pagination-dot" data-slide="1" aria-label="Слайд 2"></button>
+                <button class="pagination-dot" data-slide="2" aria-label="Слайд 3"></button>
+            </div>
+            </div>
+        </div>
+        </section>
+       <main class="popular-products-section">
+             <section class="popular-products">
+        <h2 class="section-title">Популярные товары</h2>
+        
+        <div class="products-scroll-container">
+            <div class="products-wrapper">
+                <!-- Карточка товара 1 -->
+                <div class="product-card">
+                    <button class="heart"><img src="/images/heart.svg" alt=""></button>
+                    <img class="product-image" src="/images/Rectangle.jpg" alt="">
+                    <div class="product-name">Сережки из белого золота с аметистами и рубинами</div>
+                    <div class="product-price">8 000 000 ₽</div>
+                </div>
+                  <div class="product-card">
+                    <button class="heart"><img src="/images/heart.svg" alt=""></button>
+                    <img class="product-image" src="/images/Rectangle.jpg" alt="">
+                    <div class="product-name">Сережки из белого золота с аметистами и рубинами</div>
+                    <div class="product-price">8 000 000 ₽</div>
+                </div>
+                  <div class="product-card">
+                    <button class="heart"><img src="/images/heart.svg" alt=""></button>
+                    <img class="product-image" src="/images/Rectangle.jpg" alt="">
+                    <div class="product-name">Сережки из белого золота с аметистами и рубинами</div>
+                    <div class="product-price">8 000 000 ₽</div>
+                </div>
+                  <div class="product-card">
+                    <button class="heart"><img src="/images/heart.svg" alt=""></button>
+                    <img class="product-image" src="/images/Rectangle.jpg" alt="">
+                    <div class="product-name">Сережки из белого золота с аметистами и рубинами</div>
+                    <div class="product-price">8 000 000 ₽</div>
+                </div>
+                  <div class="product-card">
+                    <button class="heart"><img src="/images/heart.svg" alt=""></button>
+                    <img class="product-image" src="/images/Rectangle.jpg" alt="">
+                    <div class="product-name">Сережки из белого золота с аметистами и рубинами</div>
+                    <div class="product-price">8 000 000 ₽</div>
+                </div>
+                  <div class="product-card">
+                    <button class="heart"><img src="/images/heart.svg" alt=""></button>
+                    <img class="product-image" src="/images/Rectangle.jpg" alt="">
+                    <div class="product-name">Сережки из белого золота с аметистами и рубинами</div>
+                    <div class="product-price">8 000 000 ₽</div>
+                </div>
+                  <div class="product-card">
+                    <button class="heart"><img src="/images/heart.svg" alt=""></button>
+                    <img class="product-image" src="/images/Rectangle.jpg" alt="">
+                    <div class="product-name">Сережки из белого золота с аметистами и рубинами</div>
+                    <div class="product-price">8 000 000 ₽</div>
+                </div>
+            </div>
+        </div>
+    </section>
+       </main>
+       <!-- <main class="about-section-container">
+        <section class="about-section">
+            <div class="container">
+                <h2 class="section-title">Коллекции</h2>
+            </div>
+            <div class="collections-container">
+                <div class="collection-item">
+                    <h4>Культовый гламур</h4>
+                    <p>Мир цвета и света Swarovski оживает с Арианой Гранде, воплощающей суть нашей легендарной семьи Millenia. Свежие сиреневые тона в сочетании с ее яркой звездной силой создают высококлассную модную фантазию.</p>
+                    <a href="#" class="btn">Посмотреть</a>
+                </div>
+                <img class="colloges-image" src="/images/colloges.png" alt="">
+            </div>
+        </section>
+       </main> -->
+    <script src="script.js"></script>
+    <script src="/slider-script.js"></script>
+</body>
+</html>
