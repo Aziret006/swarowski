@@ -1206,6 +1206,7 @@ html {
 @media (max-width: 768px) {
   .timeline-image img {
     padding: 10px 20px;
+    width: 70%;
   }
 }
 .timeline-text {
@@ -1235,5 +1236,85 @@ html {
 @media (max-width: 480px) {
   .timeline-text h4 {
     font-size: 14px;
+  }
+}.faq-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  gap: 77px;
+  justify-items: center;
+}
+
+.faq-header {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.faq-header img {
+  width: 102px;
+  height: 102px;
+}
+
+.faq-header p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.faq-header h4 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.faq-section-container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔽 Адаптивность */
+@media (max-width: 1024px) {
+  .faq-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .faq-header h4 {
+    font-size: 24px;
+  }
+
+  .faq-header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .faq-header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .faq-section-container {
+    padding: 60px 0;
   }
 }
